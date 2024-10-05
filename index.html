@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail produktu</title>
+    <title>Detail produktu - Uhlicum</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #fff0e5;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
+        }
+
+        /* Oranžový pruh s názvem */
+        .header {
+            background-color: #ffa500;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            padding-left: 20px;
         }
 
         .main-image {
@@ -20,6 +34,7 @@
             height: auto;
             border: 2px solid #ffa500;
             margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         .thumbnail-images {
@@ -69,28 +84,31 @@
 </head>
 <body>
 
-    <h1>Detail produktu</h1>
+    <!-- Oranžový pruh s názvem Uhlicum -->
+    <div class="header">
+        <h1>Uhlicum</h1>
+    </div>
 
     <!-- Velký hlavní obrázek produktu -->
-    <img id="mainImage" src="https://img.kwcdn.com/product/fancy/26db6dd3-969a-4861-92a4-d7f16ee66261.jpg?imageView2/2/w/800/q/70/format/webp" alt="Hlavní obrázek produktu" class="main-image">
+    <img id="mainImage" src="https://example.com/obrazek1.jpg" alt="Hlavní obrázek produktu" class="main-image">
 
     <!-- Miniaturní obrázky, na které lze klikat -->
     <div class="thumbnail-images">
-        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0b98457ecf36a7b4fa6d78dd407d2758.jpg?imageView2/2/w/800/q/70/format/webp" alt="Obrázek 1" onclick="changeImage('https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0b98457ecf36a7b4fa6d78dd407d2758.jpg?imageView2/2/w/800/q/70/format/webp')">
-        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/e87ab483618c49996ab33776a28a52a7.jpg?imageView2/2/w/800/q/70/format/webp" onclick="changeImage('https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/e87ab483618c49996ab33776a28a52a7.jpg?imageView2/2/w/800/q/70/format/webp')">
-        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f02bf2f33ef6710470f93d32cc13155d.jpg?imageView2/2/w/800/q/70/format/webp" alt="Obrázek 3" onclick="changeImage('https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/f02bf2f33ef6710470f93d32cc13155d.jpg?imageView2/2/w/800/q/70/format/webp')">
-        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/42ae9f9cf391ae75a09ce998fb2ce387.jpg?imageView2/2/w/800/q/70/format/webp" alt="Obrázek 4" onclick="changeImage('https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/42ae9f9cf391ae75a09ce998fb2ce387.jpg?imageView2/2/w/800/q/70/format/webp')">
-        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/574c7363d20d23e5e8c00eea8409c3ac.jpg?imageView2/2/w/800/q/70/format/webp" alt="Obrázek 5" onclick="changeImage('https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/574c7363d20d23e5e8c00eea8409c3ac.jpg?imageView2/2/w/800/q/70/format/webp')">
+        <img src="https://example.com/obrazek1.jpg" alt="Obrázek 1" onclick="changeImage('https://example.com/obrazek1.jpg')">
+        <img src="https://example.com/obrazek2.jpg" alt="Obrázek 2" onclick="changeImage('https://example.com/obrazek2.jpg')">
+        <img src="https://example.com/obrazek3.jpg" alt="Obrázek 3" onclick="changeImage('https://example.com/obrazek3.jpg')">
+        <img src="https://example.com/obrazek4.jpg" alt="Obrázek 4" onclick="changeImage('https://example.com/obrazek4.jpg')">
+        <img src="https://example.com/obrazek5.jpg" alt="Obrázek 5" onclick="changeImage('https://example.com/obrazek5.jpg')">
     </div>
 
     <!-- Popis produktu -->
     <div class="product-description">
-        <h2>Klávesnice Mechanická </h2>
-        <p>Přenosná 60% Mechanická Herní Klávesnice, Ledově Modře LED Podsvícená Kompaktní 68-klávesová Mini Kabelová Kancelářská Klávesnice S Modrým Spínačem Pro Windows Laptop PC Pro Mac Dárek K Narozeninám/Velikonocům/prezidentovi/chlapci/přítelkyni</p>
+        <h2>Název produktu</h2>
+        <p>Toto je podrobný popis produktu. Tento text může obsahovat všechny důležité informace o vlastnostech, velikosti, materiálu nebo dalších specifikacích produktu. Lze jej upravit dle potřeby.</p>
     </div>
 
     <!-- Odkaz na email -->
- <a href="mailto:example@uhlicum.com?subject=Dotaz%20na%20produkt&body=Dobrý%20den,%0AMěl%20bych%20zájem%20o%20informace%20k%20produktu.">Kontaktovat nás</a>
+    <a href="mailto:example@uhlicum.com?subject=Dotaz%20na%20produkt&body=Dobrý%20den,%0AMěl%20bych%20zájem%20o%20informace%20k%20produktu." class="email-link">Kontaktovat nás</a>
 
     <script>
         // Funkce pro změnu hlavního obrázku po kliknutí na miniaturu
