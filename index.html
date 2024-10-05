@@ -95,7 +95,8 @@
     <script>
         // Funkce pro změnu hlavního obrázku po kliknutí na miniaturu
         function changeImage(imageSrc) {
-            document.getElementById('mainImage').src = imageSrc;
+            var mainImage = document.getElementById('mainImage');
+            mainImage.src = imageSrc;
         }
     </script>
 
