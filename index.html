@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail produktu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0e5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-image {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            border: 2px solid #ffa500;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .thumbnail-images img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s ease;
+        }
+
+        .thumbnail-images img:hover {
+            border: 2px solid #ffa500;
+        }
+
+        .product-description {
+            margin-top: 20px;
+        }
+
+        .product-description h2 {
+            color: #ffa500;
+        }
+
+        .email-link {
+            display: block;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ffa500;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .email-link:hover {
+            background-color: #ff7f00;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Detail produktu</h1>
+
+    <!-- Velký hlavní obrázek produktu -->
+    <img id="mainImage" src="obrazek1.jpg" alt="Hlavní obrázek produktu" class="main-image">
+
+    <!-- Miniaturní obrázky, na které lze klikat -->
+    <div class="thumbnail-images">
+        <img src="obrazek1.jpg" alt="Obrázek 1" onclick="changeImage('obrazek1.jpg')">
+        <img src="obrazek2.jpg" alt="Obrázek 2" onclick="changeImage('obrazek2.jpg')">
+        <img src="obrazek3.jpg" alt="Obrázek 3" onclick="changeImage('obrazek3.jpg')">
+        <img src="obrazek4.jpg" alt="Obrázek 4" onclick="changeImage('obrazek4.jpg')">
+        <img src="obrazek5.jpg" alt="Obrázek 5" onclick="changeImage('obrazek5.jpg')">
+    </div>
+
+    <!-- Popis produktu -->
+    <div class="product-description">
+        <h2>Název produktu</h2>
+        <p>Toto je podrobný popis produktu. Tento text může obsahovat všechny důležité informace o vlastnostech, velikosti, materiálu nebo dalších specifikacích produktu. Lze jej upravit dle potřeby.</p>
+    </div>
+
+    <!-- Odkaz na email -->
+    <a href="mailto:example@uhlicum.com" class="email-link">Kontaktovat nás</a>
+
+    <script>
+        // Funkce pro změnu hlavního obrázku po kliknutí na miniaturu
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
